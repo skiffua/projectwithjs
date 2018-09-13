@@ -5,4 +5,13 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500, 'easeInOutSine');
     });
+    $('.single-item').slick({
+        autoplay: true,
+    });
+    $('.multiple-items').slick({
+        infinite: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });
 });
